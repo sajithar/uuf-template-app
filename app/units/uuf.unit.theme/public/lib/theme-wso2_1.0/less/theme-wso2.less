@@ -18,7 +18,7 @@
  * default values
  * ======================================================================== */
 
-@font-face {.font( 'Roboto'; 300; 'normal'; 'Roboto Light'; 'Roboto-Light-webfont' )}
+@font-face {.font( 'Roboto'; 300; 'normal'; 'Roboto Light'; 'Roboto-Light-webfont'; '../fonts' )}
 
 @font-default: 'Roboto Light', Arial, Helvetica, sans-serif;
 @font-icons: 'font-wso2';
@@ -127,9 +127,9 @@
 	background-image: linear-gradient(@origin, @start, @stop);
 }
 
-.font(@font; @font-weight; @font-style; @font-name; @file-name;){
+.font(@font; @font-weight; @font-style; @font-name; @file-name; @font-path;){
         
-    @font-file:'../fonts/@{font}/@{file-name}';
+    @font-file:'@{font-path}/@{font}/@{file-name}';
         
     font-family: @font-name;
     font-style: @font-style;
