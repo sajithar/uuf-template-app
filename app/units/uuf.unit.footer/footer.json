@@ -1,8 +1,8 @@
 {
     "version": "1.0.0",
-    "index": 130,
     "pushedUris": [
         "/",
         "/{+any}"
-    ]
+    ],
+    "isAnonymous": true
 }

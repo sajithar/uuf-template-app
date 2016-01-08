@@ -1,3 +1,6 @@
 function onRequest(context) {
-    new Log("MY").info(stringify(Object.keys(context)));
+    context.handlebars.registerHelper('json', function(obj) {
+        new Log().warn("===================="+JSON.stringify(obj));
+        return (JSON.stringify(obj));
+    });
 }

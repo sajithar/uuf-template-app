@@ -1,6 +1,4 @@
 <%
-var StaticRouter = require("static-files-router.js");
-
-// TODO: handle error/exceptions
+var StaticRouter = require("/lib/static-files-router.js");
 StaticRouter.route(request, response);
 %>

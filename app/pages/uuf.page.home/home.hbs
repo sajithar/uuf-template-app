@@ -1,7 +1,53 @@
-{{#zone "title"}}UUF | WSO2{{/zone}}
+{{#zone "title"}}Home | {{@app.conf.appName}}{{/zone}}
+
+{{#zone "breadcrumbs"}}
+    <li>
+        <a href="{{@app.context}}/">
+            <i class="icon fw fw-home"></i>
+        </a>
+    </li>
+{{/zone}}
 
 {{#zone "content"}}
     <div class="jumbotron">
         <h1>Unified UI Template App</h1>
     </div>
+
+    <div class="col-md-6 panel panel-default">
+        <div class="panel panel-heading">
+            Show Alert Example
+        </div>
+        <div class="panel panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" class="form-control">
+                        <option value="success">Success</option>
+                        <option value="info">Info</option>
+                        <option value="warning">Warning</option>
+                        <option value="danger">Danger</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <input id="message" type="text" class="form-control" />
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input id="dismissable" type="checkbox" /> Dismissable
+                    </label>
+                </div>
+                <button type="button" id="generateBtn" class="btn btn-primary">Show</button>
+            </form>
+        </div>
+        <div id="alertWrapper" class="panel panel-footer"></div>
+    </div>
+{{/zone}}
+
+{{#zone "bottomJs"}}
+    {{js "js/client-side-rendering.js"}}
 {{/zone}}

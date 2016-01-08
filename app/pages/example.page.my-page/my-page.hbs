@@ -1,12 +1,21 @@
-{{#zone "title"}}Example App | WSO2{{/zone}}
+{{#zone "title"}}My Page | Example App{{/zone}}
+
+{{#zone "breadcrumbs"}}
+    <li>
+        <a href="{{@app.context}}/">
+            <i class="icon fw fw-home"></i>
+        </a>
+    </li>
+    <li>
+        <a href="{{@app.context}}/mypage">
+            My Page
+        </a>
+    </li>
+{{/zone}}
 
 {{#zone "content"}}
     <div class="jumbotron">
         <h3>My Page</h3>
     </div>
-    <img src="{{@unit.publicUri}}/img/my-image.png"/>
-{{/zone}}
-
-{{#zone "bottomJs"}}
-    {{js "js/my-js.js"}}
+    <div>{{unit "example.unit.my-unit"}}</div>
 {{/zone}}
