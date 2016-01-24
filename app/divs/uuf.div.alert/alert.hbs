@@ -1,8 +1,8 @@
-<div {{#if @unit.params.id}}id="{{@unit.params.id}}" {{/if~}}
-        class="alert alert-{{@unit.params.type}}" role="alert">
+<div {{#if @div.params.id}}id="{{@div.params.id}}" {{/if~}}
+        class="alert alert-{{@div.params.type}}" role="alert">
     <i class="icon fw fw-{{icon}}"></i>
-    <strong>{{@unit.params.title}}</strong> {{{@unit.params.message}}}
-    {{#if @unit.params.dismissable}}
+    <strong>{{@div.params.title}}</strong> {{{@div.params.message}}}
+    {{#if @div.params.dismissable}}
         <button type="button" class="close" aria-label="close" data-dismiss="alert">
             <span aria-hidden="true"><i class="fw fw-cancel"></i></span>
         </button>

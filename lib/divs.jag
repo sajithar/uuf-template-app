@@ -1,0 +1,4 @@
+<%
+var divsRouter = require("/lib/divs-router.js");
+divsRouter.route(request, response);
+%>

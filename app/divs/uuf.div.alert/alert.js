@@ -1,5 +1,5 @@
 function onRequest(context) {
-    var type = context.unit.params.type;
+    var type = context.div.params.type;
     switch (type) {
         case "success":
             return {icon: "ok"};
