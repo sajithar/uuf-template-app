@@ -20,6 +20,11 @@ function onRequest(context) {
                 exit();
             } else {
                 // Generic login process is enabled.
+                new Log("aaaaaaaaaaaa").warn("request.getParameter(\"referer\") = " + request.getParameter("referer"));
+                return {
+                    message: request.getParameter("error"),
+                    referer: request.getParameter("referer")
+                };
             }
         }
     }
