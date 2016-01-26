@@ -1,0 +1,21 @@
+{{#zone "title"}}My Page | Example App{{/zone}}
+
+{{#zone "breadcrumbs"}}
+    <li>
+        <a href="{{@app.context}}/">
+            <i class="icon fw fw-home"></i>
+        </a>
+    </li>
+    <li>
+        <a href="{{@app.context}}/mypage">
+            My Page
+        </a>
+    </li>
+{{/zone}}
+
+{{#zone "content"}}
+    <div class="jumbotron">
+        <h3>My Page</h3>
+    </div>
+    <div>{{div "example.div.my-div"}}</div>
+{{/zone}}
