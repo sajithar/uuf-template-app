@@ -5,7 +5,7 @@ $(document).ready(function () {
         var message = $('#message').val();
         var dismissable = $('#dismissable').is(':checked') ? "true" : "";
         $.ajax({
-            url: "unit/uuf.unit.alert",
+            url: "unit/uuf.template.alert",
             method: "GET",
             data: {type: type, title: title, message: message, dismissable: dismissable},
             success: function (result, status, xhr) {
